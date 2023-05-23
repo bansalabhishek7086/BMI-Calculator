@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body{
+  background-image: linear-gradient(pink, yellow, green,orange,purple,blue,red);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid lightcoral;
+
+  /* background-image: linear-gradient(pink, yellow, green,orange,purple,blue,red); */
+}
+ 
+.container {
+  box-shadow: 0 0 20px 20px  #ccc;
+  border-radius: 8px;
+  padding: 3rem;
+  background-color: white;
+  border: 5px solid lightgray;
+  width:auto;
+  height: auto;
+}
+ 
+input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 15px 4px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.btn {
+  /* display: block; */
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 15px 0  ;
+  padding: 10px 0;
+  background-color: #0077EE;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* .btn-outline {
+  background-color: #fff;
+  color: #A6BCDA;
+} */
+
+.btn:hover{
+  background-color: lightskyblue;
+  color:black;
+}
+.center {
+  /* text-align: center; */
+  margin: 0px 0px 25px 0px;
+  position: relative;
+  animation: myfirst 2s linear 0.5s infinite alternate;
+}
+@keyframes myfirst {
+  0%   {color:red; left: 0% ; }
+  25%  {color:yellow;  }
+  50%  {color:blue; }
+  75%  {color:green;  }
+  100% {color:red;  left: 40% ;}
+}
+.center2 {
+  /* text-align: center; */
+  margin: 25px 0px 10px 0px;
+  font-size: 1.2rem;
+}
+
+.animation{
+  animation: example 3s infinite;
+} 
+
+@keyframes example {
+  0%   {background-color:green;  }
+  25%  {background-color:yellow;  }
+  50%  {background-color:blue;  }
+   75%  {background-color:red;  }
+  100% {background-color:green;  } 
+}
+
+
+/* .animation{
+  animation-name: mymove;
+  animation-duration: 4s;
+  animation-iteration-count: 4;
+  animation-direction: alternate; 
+}
+@keyframes mymove {
+  0% {left: 0px; top:0px;}
+  50% {left: 100px; top:0px;}
+  100% {left: 200px; top:0px;} 
+} */
+
+
+p {
+  margin: 10px 0;
+}
+ 
+.img-container {
+  text-align: center;
+}
+ 
+.img-container img {
+  height: 200px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    width:95vw;
+  }
+}
